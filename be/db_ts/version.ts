@@ -1,0 +1,2 @@
+interface version{
+	name: any,}

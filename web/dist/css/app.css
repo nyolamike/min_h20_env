@@ -1,0 +1,24 @@
+/* margin right 10 */
+.mr-10{
+    margin-right: 10px;
+}
+
+/* padding top bottom five */
+.ptb-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.selected{
+    color: #575b9e !important;
+    /* font-weight: bold !important; */
+    font-weight: bolder !important; 
+}
+
+.hidden{
+    display: none !important;
+}
+
+.pointer{
+    cursor: pointer;
+}

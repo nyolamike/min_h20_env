@@ -1,0 +1,2 @@
+interface installment_repayment{
+	installment_id: any,	repayment_id: any,	first_name: any,	last_name: any,	computer_number: any,	formated_computer_number: any,	repayment_amount: any,	interest_repaid_amount: any,	principle_repaid_amount: any,	olb_amount: any,	extra_amount: any,	repayment_for_period_time: any,	repayment_for_period_date: any,	is_batch_repayment: any,	posted_file: any,	repayment_time: any,	repayment_date: any,	comment: any,}

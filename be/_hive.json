@@ -1,0 +1,2102 @@
+{
+    "version": "1.0.0",
+    "hive_of_a": "educationfintect",
+    "app_name": "wlasfp",
+    "combs": {
+        "config": {
+            "name": [
+                "vcnn",
+                30
+            ],
+            "company_name": [
+                "vcnn",
+                30
+            ],
+            "is_active": [
+                "inn",
+                30
+            ],
+            "decimal_places": [
+                "inn_d",
+                0,
+                0
+            ],
+            "policy_recover_charges_before_installment": [
+                "inn_d",
+                0,
+                0
+            ],
+            "policy_pay_school_before_company": [
+                "inn_d",
+                0,
+                0
+            ],
+            "industry": [
+                "tn"
+            ],
+            "logo": [
+                "tn"
+            ],
+            "city": [
+                "tn"
+            ],
+            "country": [
+                "tn"
+            ],
+            "phone": [
+                "tn"
+            ],
+            "fax": [
+                "tn"
+            ],
+            "email": [
+                "tn"
+            ],
+            "address": [
+                "tn"
+            ],
+            "website": [
+                "tn"
+            ],
+            "bank_name": [
+                "tn"
+            ],
+            "bank_branch_name": [
+                "tn"
+            ],
+            "bank_account_name": [
+                "tn"
+            ],
+            "bank_account_number": [
+                "tn"
+            ],
+            "_comments": [
+                "name: the name of the configuration",
+                "is_active: by default its active, the user needs to make sure that there is only one active config"
+            ]
+        },
+        "user": {
+            "name": [
+                "vcnn",
+                200
+            ],
+            "email": [
+                "vcnn",
+                30
+            ],
+            "tenant_of": [
+                "tnn",
+                30
+            ],
+            "is_owner": [
+                "inn",
+                30,
+                0
+            ],
+            "password": [
+                "vcnn",
+                200
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "code": [
+                "vcnn",
+                30
+            ],
+            "avatar": [
+                "tnn_d",
+                30,
+                "bee\/images\/default_avatar_250.png"
+            ],
+            "first_name": [
+                "vcn",
+                200
+            ],
+            "last_name": [
+                "vcn",
+                200
+            ],
+            "date_of_birth": [
+                "vcn",
+                200
+            ],
+            "time_of_birth": [
+                "inn_d",
+                30,
+                0
+            ],
+            "address": [
+                "vcn",
+                200
+            ],
+            "nin": [
+                "vcn",
+                200
+            ],
+            "zone_id": [
+                "inn_d",
+                30,
+                0
+            ],
+            "other_zone_id": [
+                "inn_d",
+                30,
+                0
+            ],
+            "findus_source_id": [
+                "inn_d",
+                30,
+                1
+            ],
+            "occupation": [
+                "vcn",
+                200
+            ],
+            "gender": [
+                "vcn",
+                30
+            ]
+        },
+        "role": {
+            "name": [
+                "vcnn",
+                30
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "role_module": {
+            "role_id": [
+                "fk"
+            ],
+            "module_code": [
+                "vcnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comment": "accessible things like menu item links"
+        },
+        "role_permisiion": {
+            "role_id": [
+                "fk"
+            ],
+            "permission": [
+                "vcnn",
+                50
+            ],
+            "can_create": [
+                "inn",
+                30,
+                0
+            ],
+            "can_read": [
+                "inn",
+                30,
+                0
+            ],
+            "can_update": [
+                "inn",
+                30,
+                0
+            ],
+            "can_delete": [
+                "inn",
+                30,
+                0
+            ],
+            "_comment": "The individual action items"
+        },
+        "role_action": {
+            "role_id": [
+                "fk"
+            ],
+            "name": [
+                "tnn"
+            ],
+            "code": [
+                "vcnn",
+                100
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "user_role": {
+            "user_id": [
+                "fk"
+            ],
+            "role_id": [
+                "fk"
+            ],
+            "status": [
+                "vcnn",
+                30
+            ]
+        },
+        "user_denied_action": {
+            "user_id": [
+                "fk"
+            ],
+            "role_id": [
+                "fk"
+            ],
+            "role_action_id": [
+                "fk"
+            ],
+            "remark": [
+                "tn"
+            ]
+        },
+        "version": {
+            "name": [
+                "vcnn",
+                30
+            ]
+        },
+        "log": {
+            "route": [
+                "tn"
+            ],
+            "type": [
+                "tn"
+            ],
+            "crud_operation": [
+                "tn"
+            ],
+            "table": [
+                "tn"
+            ],
+            "role": [
+                "tn"
+            ],
+            "permissions": [
+                "tn"
+            ],
+            "json_data": [
+                "tn"
+            ],
+            "section_id": [
+                "tn"
+            ],
+            "affected_record_guid": [
+                "tn"
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "trail": {
+            "who": [
+                "tn"
+            ],
+            "user_id": [
+                "tn"
+            ],
+            "activity": [
+                "tn"
+            ],
+            "role": [
+                "tn"
+            ],
+            "role_id": [
+                "tn"
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "district": {
+            "name": [
+                "vcnn",
+                200
+            ]
+        },
+        "sub_county": {
+            "district_id": [
+                "fk"
+            ],
+            "name": [
+                "vcnn",
+                200
+            ]
+        },
+        "zone": {
+            "sub_county_id": [
+                "fk"
+            ],
+            "name": [
+                "vcnn",
+                200
+            ]
+        },
+        "findus_source": {
+            "name": [
+                "vcnn",
+                200
+            ]
+        },
+        "contact_type": {
+            "name": [
+                "vcnn",
+                200
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "user_contact": {
+            "contact_type_id": [
+                "fk"
+            ],
+            "user_id": [
+                "fk"
+            ],
+            "value": [
+                "vcnn",
+                200
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "status: active, inactive"
+            ]
+        },
+        "user_next_of_kin": {
+            "user_id": [
+                "fk"
+            ],
+            "name": [
+                "vcnn",
+                200
+            ],
+            "title": [
+                "vcn",
+                200
+            ],
+            "address": [
+                "vcn",
+                200
+            ],
+            "_comments": []
+        },
+        "next_of_kin_contact": {
+            "user_next_of_kin_id": [
+                "fk"
+            ],
+            "contact_type_id": [
+                "fk"
+            ],
+            "value": [
+                "vcnn",
+                200
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "status: active, inactive"
+            ]
+        },
+        "school_contact": {
+            "contact_type_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "value": [
+                "vcnn",
+                200
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "status: active, inactive"
+            ]
+        },
+        "school": {
+            "name": [
+                "vcnn",
+                200
+            ],
+            "level": [
+                "vcnn",
+                30
+            ],
+            "kind": [
+                "vcnn",
+                30
+            ],
+            "logo": [
+                "tnn_d",
+                200,
+                "bee\/images\/default_avatar_250.png"
+            ],
+            "address": [
+                "vcn",
+                200
+            ],
+            "district_id": [
+                "inn_d",
+                30,
+                0
+            ],
+            "_comments": [
+                "level: nursury, primary, secondary, terchary, university",
+                "kind: government, private, ngo"
+            ]
+        },
+        "class_room": {
+            "school_id": [
+                "fk"
+            ],
+            "name": [
+                "vcnn",
+                200
+            ],
+            "section": [
+                "vcnn",
+                30
+            ],
+            "class_level": [
+                "inn",
+                30
+            ],
+            "stream": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "section: a-level, o-level, lower-primary",
+                "class_level: 1,2,3, ... 6"
+            ]
+        },
+        "school_fees_structure": {
+            "class_room_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "start_date": [
+                "vcnn",
+                30
+            ],
+            "end_date": [
+                "vcnn",
+                30
+            ],
+            "start_time": [
+                "inn",
+                30
+            ],
+            "end_time": [
+                "inn",
+                30
+            ],
+            "amount": [
+                "dnn"
+            ],
+            "name": [
+                "vcnn",
+                200
+            ],
+            "sub_name": [
+                "vcnn",
+                200
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "status: active, inactive"
+            ]
+        },
+        "user_school": {
+            "user_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "role": [
+                "vcnn",
+                200
+            ],
+            "is_active": [
+                "inn_d",
+                30,
+                0
+            ],
+            "_comments": [
+                "this comb defines the parent and school opertor, but user_id--school_id--role should be unique",
+                "role: parent or operator",
+                "is_active: by default its not active, this needs to be activated"
+            ]
+        },
+        "student": {
+            "user_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "role": [
+                "vcnn",
+                200
+            ],
+            "app_code": [
+                "vcnn",
+                200
+            ],
+            "is_active": [
+                "inn_d",
+                30,
+                0
+            ],
+            "status_remark": [
+                "tn"
+            ],
+            "first_name": [
+                "vcn",
+                200
+            ],
+            "last_name": [
+                "vcn",
+                200
+            ],
+            "date_of_birth": [
+                "vcn",
+                200
+            ],
+            "time_of_birth": [
+                "inn_d",
+                30,
+                0
+            ],
+            "address": [
+                "vcn",
+                200
+            ],
+            "zone_id": [
+                "inn_d",
+                30,
+                0
+            ],
+            "gender": [
+                "vcnn",
+                30
+            ],
+            "previous_school": [
+                "vcn",
+                30
+            ],
+            "health_status": [
+                "vcn",
+                30
+            ],
+            "religion": [
+                "vcn",
+                200
+            ],
+            "nin": [
+                "vcn",
+                200
+            ],
+            "academic_status": [
+                "vcn",
+                200
+            ],
+            "avatar": [
+                "tnn_d",
+                30,
+                "bee\/images\/default_avatar_250.png"
+            ],
+            "_comments": [
+                "this comb defines the parent and school opertor, but user_id--school_id--role should be unique",
+                "role: parent or operator",
+                "user_id: parent id",
+                "is_active: by default its not active, this needs to be activated",
+                "app_code: school-id\/parent-id\/student-id"
+            ]
+        },
+        "academic_term": {
+            "school_id": [
+                "fk"
+            ],
+            "name": [
+                "vcnn",
+                30
+            ],
+            "start_date": [
+                "vcnn",
+                30
+            ],
+            "end_date": [
+                "vcnn",
+                30
+            ],
+            "start_time": [
+                "inn",
+                30
+            ],
+            "end_time": [
+                "inn",
+                30
+            ]
+        },
+        "package": {
+            "name": [
+                "vcnn",
+                30
+            ],
+            "description": [
+                "tn"
+            ],
+            "min_collection_rate": [
+                "dnn",
+                30
+            ],
+            "max_collection_rate": [
+                "dnn",
+                30
+            ],
+            "min_duration_days": [
+                "inn",
+                30
+            ],
+            "max_duration_days": [
+                "inn",
+                30
+            ],
+            "min_security_days": [
+                "inn",
+                30
+            ],
+            "max_security_days": [
+                "inn",
+                30
+            ],
+            "min_security_rate": [
+                "dnn",
+                30
+            ],
+            "max_security_rate": [
+                "dnn",
+                30
+            ],
+            "min_total_collection_amount": [
+                "dnn",
+                30
+            ],
+            "max_total_collection_amount": [
+                "dnn",
+                30
+            ],
+            "accepts_weekly_basis": [
+                "inn_d",
+                30,
+                1
+            ],
+            "min_grace_period_days": [
+                "dnn",
+                30
+            ],
+            "max_grace_period_days": [
+                "dnn",
+                30
+            ],
+            "charge_late_collection_penalty": [
+                "inn_d",
+                30,
+                1
+            ],
+            "min_penalty_grace_period_days": [
+                "inn_d",
+                30,
+                0
+            ],
+            "max_penalty_grace_period_days": [
+                "inn_d",
+                30,
+                0
+            ],
+            "min_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "max_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "min_disqualification_days": [
+                "dnn",
+                30
+            ],
+            "max_disqualification_days": [
+                "dnn",
+                30
+            ],
+            "min_disqualification_rate": [
+                "dnn",
+                30
+            ],
+            "max_disqualification_rate": [
+                "dnn",
+                30
+            ],
+            "min_requalification_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "max_requalification_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ]
+        },
+        "contract": {
+            "user_id": [
+                "fk"
+            ],
+            "student_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "school_fees_structure_id": [
+                "fk"
+            ],
+            "start_date": [
+                "vcnn",
+                30
+            ],
+            "end_date": [
+                "vcnn",
+                30
+            ],
+            "start_time": [
+                "inn",
+                30
+            ],
+            "end_time": [
+                "inn",
+                30
+            ],
+            "package_id": [
+                "fk"
+            ],
+            "package_collection_rate": [
+                "dnn",
+                30
+            ],
+            "package_duration_days": [
+                "inn",
+                30
+            ],
+            "package_security_days": [
+                "inn",
+                30
+            ],
+            "package_security_rate": [
+                "dnn",
+                30
+            ],
+            "package_total_collection_amount": [
+                "dnn",
+                30
+            ],
+            "package_accepts_weekly_basis": [
+                "inn_d",
+                30,
+                1
+            ],
+            "package_grace_period_days": [
+                "dnn",
+                30
+            ],
+            "package_charge_late_collection_penalty": [
+                "inn_d",
+                30,
+                1
+            ],
+            "package_penalty_grace_period_days": [
+                "inn_d",
+                30,
+                0
+            ],
+            "package_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "package_disqualification_days": [
+                "dnn",
+                30
+            ],
+            "package_disqualification_rate": [
+                "dnn",
+                30
+            ],
+            "package_requalification_penalty_rate": [
+                "dnn",
+                30
+            ],
+            "total_amount_to_collect": [
+                "dnn",
+                30
+            ],
+            "daily_collection_installment_amount": [
+                "dnn",
+                30
+            ],
+            "weekly_collection_installment_amount": [
+                "dnn",
+                30
+            ],
+            "class_room_id": [
+                "vcnn",
+                200
+            ],
+            "student_class_room_name": [
+                "vcnn",
+                200
+            ],
+            "student_class_room_section": [
+                "vcnn",
+                30
+            ],
+            "student_class_room_class_level": [
+                "inn",
+                30
+            ],
+            "student_class_room_stream": [
+                "vcnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "remarks": [
+                "tn"
+            ],
+            "_comments": [
+                "status => pending, active, rejected, closed, terminated, disqualified"
+            ]
+        },
+        "installment": {
+            "contract_id": [
+                "fk"
+            ],
+            "user_id": [
+                "fk"
+            ],
+            "student_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "academic_term_id": [
+                "fk"
+            ],
+            "school_fees_structure_id": [
+                "fk"
+            ],
+            "start_date": [
+                "vcnn",
+                30
+            ],
+            "end_date": [
+                "vcnn",
+                30
+            ],
+            "start_time": [
+                "inn",
+                30
+            ],
+            "end_time": [
+                "inn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "expected_installment_amount": [
+                "dnn",
+                30
+            ],
+            "schedule_round": [
+                "inn_d",
+                30,
+                0
+            ],
+            "schedule_balance": [
+                "dnn",
+                30
+            ],
+            "accumulated_charges_amount": [
+                "dnn",
+                30
+            ],
+            "collected_installment_amount": [
+                "dnn",
+                30
+            ],
+            "collected_installment_payment_amount": [
+                "dnn",
+                30
+            ],
+            "collected_charges_payment_amount": [
+                "dnn",
+                30
+            ],
+            "schools_collected_amount": [
+                "dnn",
+                30
+            ],
+            "business_collected_amount": [
+                "dnn",
+                30
+            ]
+        },
+        "weekly_installment": {
+            "contract_id": [
+                "fk"
+            ],
+            "user_id": [
+                "fk"
+            ],
+            "student_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "academic_term_id": [
+                "fk"
+            ],
+            "school_fees_structure_id": [
+                "fk"
+            ],
+            "start_date": [
+                "vcnn",
+                30
+            ],
+            "end_date": [
+                "vcnn",
+                30
+            ],
+            "start_time": [
+                "inn",
+                30
+            ],
+            "end_time": [
+                "inn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "expected_installment_amount": [
+                "dnn",
+                30
+            ],
+            "schedule_round": [
+                "inn_d",
+                30,
+                0
+            ],
+            "schedule_balance": [
+                "dnn",
+                30
+            ],
+            "accumulated_charges_amount": [
+                "dnn",
+                30
+            ],
+            "collected_installment_amount": [
+                "dnn",
+                30
+            ],
+            "collected_installment_payment_amount": [
+                "dnn",
+                30
+            ],
+            "collected_charges_payment_amount": [
+                "dnn",
+                30
+            ],
+            "schools_collected_amount": [
+                "dnn",
+                30
+            ],
+            "business_collected_amount": [
+                "dnn",
+                30
+            ]
+        },
+        "installment_charge": {
+            "contract_id": [
+                "fk"
+            ],
+            "installment_id": [
+                "fk"
+            ],
+            "charge_date": [
+                "vcnn",
+                30
+            ],
+            "charge_time": [
+                "inn",
+                30
+            ],
+            "days_missed": [
+                "inn",
+                30
+            ],
+            "amount_charged": [
+                "dnn",
+                30
+            ],
+            "kind": [
+                "vcnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "status: applied, waved"
+            ]
+        },
+        "installment_collection": {
+            "repayment_id": [
+                "inn_d",
+                30,
+                0
+            ],
+            "contract_id": [
+                "fk"
+            ],
+            "installment_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "user_id": [
+                "fk"
+            ],
+            "amount": [
+                "dnn",
+                30
+            ],
+            "schools_collected_amount": [
+                "dnn",
+                30
+            ],
+            "business_collected_amount": [
+                "dnn",
+                30
+            ],
+            "is_business_charge": [
+                "inn_d",
+                30,
+                0
+            ],
+            "transactions_id": [
+                "tn"
+            ],
+            "payment_source": [
+                "vcnn",
+                30
+            ],
+            "payment_source_account_number": [
+                "vcnn",
+                30
+            ],
+            "payment_date": [
+                "vcnn",
+                30
+            ],
+            "payment_time": [
+                "inn",
+                30
+            ],
+            "uploaded_date": [
+                "vcnn",
+                30
+            ],
+            "uploaded_time": [
+                "inn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "is_recorded_via_excell_file": [
+                "inn_d",
+                30,
+                0
+            ],
+            "file": [
+                "tn"
+            ]
+        },
+        "repayment_source": {
+            "name": [
+                "vcnn",
+                100
+            ],
+            "description": [
+                "tn"
+            ],
+            "status": [
+                "vcnn_d",
+                30,
+                "active"
+            ],
+            "kind": [
+                "vcnn",
+                30
+            ],
+            "agent_id": [
+                "inn_d",
+                30,
+                0
+            ]
+        },
+        "repayment": {
+            "repayment_source_id": [
+                "fk"
+            ],
+            "total_amount": [
+                "dnn",
+                30
+            ],
+            "repayment_time": [
+                "inn_d",
+                30,
+                0
+            ],
+            "repayment_date": [
+                "vcnn",
+                30
+            ],
+            "is_batch_repayment": [
+                "inn",
+                30
+            ],
+            "posted_file": [
+                "vcnn",
+                30
+            ],
+            "comment": [
+                "tn"
+            ],
+            "is_batch_processed": [
+                "inn",
+                30,
+                0
+            ],
+            "_comments": [
+                "repayment_date is the date that the payment was received at the bank",
+                "total_amount is the total amount of the repayment or the total amount on the excell shit if its a batch repayment"
+            ]
+        },
+        "batch_repayment_entry": {
+            "repayment_id": [
+                "fk"
+            ],
+            "repayment_source_id": [
+                "fk"
+            ],
+            "student_id": [
+                "tn"
+            ],
+            "source_account_number": [
+                "tn"
+            ],
+            "transaction_number": [
+                "tn"
+            ],
+            "posted_file": [
+                "vcnn",
+                30
+            ],
+            "payment_date": [
+                "tn"
+            ],
+            "name": [
+                "tn"
+            ],
+            "amount": [
+                "dnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "failure_reason": [
+                "tn"
+            ],
+            "comment": [
+                "tn"
+            ],
+            "_comments": [
+                "name: the name of the arent making the repayment",
+                "status: pending, finished, failed"
+            ]
+        },
+        "repayment_entry": {
+            "repayment_id": [
+                "fk"
+            ],
+            "batch_repayment_entry_id": [
+                "fk"
+            ],
+            "is_via_batch_repayment": [
+                "inn_d",
+                30,
+                0
+            ],
+            "repayment_source_id": [
+                "fk"
+            ],
+            "source_account_number": [
+                "tn"
+            ],
+            "transaction_number": [
+                "tn"
+            ],
+            "posted_file": [
+                "vcnn",
+                30
+            ],
+            "uploaded_date": [
+                "vcnn",
+                30
+            ],
+            "uploaded_time": [
+                "inn",
+                30
+            ],
+            "contract_id": [
+                "fk"
+            ],
+            "installment_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "user_id": [
+                "fk"
+            ],
+            "agent_id": [
+                "fk"
+            ],
+            "parent_id": [
+                "fk"
+            ],
+            "student_id": [
+                "fk"
+            ],
+            "school_fees_structure_id": [
+                "fk"
+            ],
+            "amount": [
+                "dnn",
+                30
+            ],
+            "schools_collected_amount": [
+                "dnn",
+                30
+            ],
+            "business_collected_amount": [
+                "dnn",
+                30
+            ],
+            "is_business_charge": [
+                "inn_d",
+                30,
+                0
+            ],
+            "payment_date": [
+                "vcnn",
+                30
+            ],
+            "payment_time": [
+                "inn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "user_id: the person who uploaded this payment an employee of wla",
+                "installment_id can be left zero cause in this case we are not tracking payment against particuler installments"
+            ]
+        },
+        "agent_deposit": {
+            "user_id": [
+                "fk"
+            ],
+            "repayment_source_id": [
+                "fk"
+            ],
+            "source_account_number": [
+                "tn"
+            ],
+            "transaction_number": [
+                "tn"
+            ],
+            "payment_date": [
+                "vcnn",
+                30
+            ],
+            "payment_time": [
+                "inn",
+                30
+            ],
+            "amount": [
+                "dnn",
+                30
+            ]
+        },
+        "agent_withdraw": {
+            "user_id": [
+                "fk"
+            ],
+            "repayment_source_id": [
+                "fk"
+            ],
+            "source_account_number": [
+                "tn"
+            ],
+            "transaction_number": [
+                "tn"
+            ],
+            "payment_date": [
+                "vcnn",
+                30
+            ],
+            "payment_time": [
+                "inn",
+                30
+            ],
+            "amount": [
+                "dnn",
+                30
+            ],
+            "kind": [
+                "vcnn",
+                30
+            ],
+            "_comments": [
+                "kind => payment, collection"
+            ]
+        },
+        "agent_activity": {
+            "name": [
+                "vcnn",
+                30
+            ],
+            "code": [
+                "vcnn",
+                30
+            ],
+            "default_amount": [
+                "dnn",
+                30
+            ],
+            "reward_percentage": [
+                "dnn",
+                30
+            ],
+            "reward_amount": [
+                "dnn",
+                30
+            ],
+            "description": [
+                "tn"
+            ],
+            "_comments": [
+                "fca => fees collection activity"
+            ]
+        },
+        "agent_commission": {
+            "user_id": [
+                "fk"
+            ],
+            "agent_activity_id": [
+                "fk"
+            ],
+            "activity_amount": [
+                "dnn",
+                30
+            ],
+            "activity_percentage": [
+                "dnn",
+                30
+            ],
+            "commission_amount": [
+                "dnn",
+                30
+            ],
+            "entry_date": [
+                "vcnn",
+                30
+            ],
+            "entry_time": [
+                "inn",
+                30
+            ],
+            "table_name": [
+                "tn"
+            ],
+            "table_entry_id": [
+                "tn"
+            ],
+            "description": [
+                "tn"
+            ]
+        },
+        "school_user": {
+            "user_id": [
+                "fk"
+            ],
+            "school_id": [
+                "fk"
+            ],
+            "rights": [
+                "vcnn",
+                30
+            ],
+            "status": [
+                "vcnn",
+                30
+            ]
+        },
+        "_hidden": [
+            "users__password",
+            "user__password"
+        ],
+        "_allowed": {
+            "get": [
+                "district",
+                "sub_county",
+                "zone",
+                "findus_source"
+            ]
+        },
+        "_migrate": {
+            "create": {
+                "_done_school_fees_structure": [],
+                "_done_repayment": [],
+                "_done_batch_repayment_entry": [],
+                "_done_repayment_entry": [],
+                "_done_repayment_sources": [
+                    {
+                        "name": "mtn mobile money",
+                        "description": "mtn mobile money",
+                        "status": "active",
+                        "kind": "mobile money",
+                        "agent_id": 0
+                    },
+                    {
+                        "name": "airtel mobile money",
+                        "description": "airtel mobile money",
+                        "status": "active",
+                        "kind": "mobile money",
+                        "agent_id": 0
+                    },
+                    {
+                        "name": "equity bank",
+                        "description": "equity bank",
+                        "status": "active",
+                        "kind": "bank",
+                        "agent_id": 0
+                    }
+                ],
+                "_done_agent_withdraws": [],
+                "_done_agent_activities": [
+                    {
+                        "name": "parent fees collection",
+                        "default_amount": 100000,
+                        "reward_percentage": 5,
+                        "reward_amount": 5000,
+                        "description": "when an agent collects fees",
+                        "code": "fca"
+                    },
+                    {
+                        "name": "parent registration",
+                        "default_amount": 10000,
+                        "reward_percentage": 10,
+                        "reward_amount": 1000,
+                        "description": "when an agent registers a parent",
+                        "code": "pra"
+                    },
+                    {
+                        "name": "school joinning",
+                        "default_amount": 100000,
+                        "reward_percentage": 10,
+                        "reward_amount": 10000,
+                        "description": "when an agent brings a schools director and the director signs up",
+                        "code": "sja"
+                    }
+                ],
+                "_done_agent_commissions": [],
+                "_done_agent_deposits": [],
+                "_done_school_user": [],
+                "_done_bee_migrated_from_1_to_2_user_denied_action": []
+            },
+            "_f_mf": [],
+            "seeds": {
+                "_done_bee_migrated_from_0_to_1_role_actions": [
+                    {
+                        "role_id": 1,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Pending Batch",
+                        "code": "\/collections\/pending",
+                        "description": "Pending Batch Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Upload Batch",
+                        "code": "\/collections\/upload",
+                        "description": "Upload Batch Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Active Contracts",
+                        "code": "\/contracts\/active",
+                        "description": "Active Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Pending Contracts",
+                        "code": "\/collections\/pending",
+                        "description": "Pending Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Rejected Contracts",
+                        "code": "\/contracts\/rejected",
+                        "description": "Rejected Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Closed Contracts",
+                        "code": "\/contracts\/closed",
+                        "description": "Closed Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Parents List",
+                        "code": "\/parents\/list",
+                        "description": "Parents List Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Add Parent",
+                        "code": "\/parents\/add",
+                        "description": "Add Parent Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Collection Packages",
+                        "code": "\/packages\/list",
+                        "description": "Collection Packages Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Add Package",
+                        "code": "\/packages\/add",
+                        "description": "Add Packages Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "List Of Schools",
+                        "code": "\/schools\/list",
+                        "description": "Schools List Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Agents List",
+                        "code": "\/agents\/list",
+                        "description": "Agents List Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Add An Agent",
+                        "code": "\/agents\/add",
+                        "description": "Add An Agent Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Repayments Report",
+                        "code": "\/reports\/repayments",
+                        "description": "Repayments Report Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "System Users",
+                        "code": "\/security\/users",
+                        "description": "System Users Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Add A User",
+                        "code": "\/security\/adduser",
+                        "description": "Add A User Menu Item"
+                    },
+                    {
+                        "role_id": 1,
+                        "name": "Roles & Permissions",
+                        "code": "\/security\/permissions",
+                        "description": "Roles & Permissions Menu Item"
+                    }
+                ],
+                "_done_bee_migrated_from_2_to_3_role_actions": [
+                    {
+                        "role_id": 2,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Pending Batch",
+                        "code": "\/collections\/pending",
+                        "description": "Pending Batch Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Upload Batch",
+                        "code": "\/collections\/upload",
+                        "description": "Upload Batch Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Active Contracts",
+                        "code": "\/contracts\/active",
+                        "description": "Active Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Pending Contracts",
+                        "code": "\/collections\/pending",
+                        "description": "Pending Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Collection History",
+                        "code": "\/collections\/list",
+                        "description": "Collection History Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Rejected Contracts",
+                        "code": "\/contracts\/rejected",
+                        "description": "Rejected Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Closed Contracts",
+                        "code": "\/contracts\/closed",
+                        "description": "Closed Contracts Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Parents List",
+                        "code": "\/parents\/list",
+                        "description": "Parents List Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Add Parent",
+                        "code": "\/parents\/add",
+                        "description": "Add Parent Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Collection Packages",
+                        "code": "\/packages\/list",
+                        "description": "Collection Packages Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Add Package",
+                        "code": "\/packages\/add",
+                        "description": "Add Packages Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "List Of Schools",
+                        "code": "\/schools\/list",
+                        "description": "Schools List Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Agents List",
+                        "code": "\/agents\/list",
+                        "description": "Agents List Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Add An Agent",
+                        "code": "\/agents\/add",
+                        "description": "Add An Agent Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Repayments Report",
+                        "code": "\/reports\/repayments",
+                        "description": "Repayments Report Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "System Users",
+                        "code": "\/security\/users",
+                        "description": "System Users Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Add A User",
+                        "code": "\/security\/adduser",
+                        "description": "Add A User Menu Item"
+                    },
+                    {
+                        "role_id": 2,
+                        "name": "Roles & Permissions",
+                        "code": "\/security\/permissions",
+                        "description": "Roles & Permissions Menu Item"
+                    }
+                ]
+            },
+            "round": 3
+        }
+    },
+    "seeds": {
+        "configs": [
+            {
+                "name": "wla",
+                "company_name": "wla",
+                "is_active": 1,
+                "decimal_places": 2,
+                "logo": "",
+                "city": "kampala",
+                "country": "uganda",
+                "phone": "+256 (0) xxxxxx",
+                "fax": "+256 (0) xxx yyyy",
+                "email": "company@gmail.com",
+                "address": "Plot 1 My Street",
+                "website": "http:\/\/www.plotx.com",
+                "policy_recover_charges_before_installment": 0,
+                "policy_pay_school_before_company": 1
+            }
+        ],
+        "roles": [
+            {
+                "name": "backofficcee",
+                "description": "this person is a backofficcee system operator"
+            },
+            {
+                "name": "school",
+                "description": "this person is a school system operator"
+            },
+            {
+                "name": "parent",
+                "description": "this person is a parent to a school"
+            },
+            {
+                "name": "agent",
+                "description": "this person is an agent of wla"
+            }
+        ],
+        "contact_types": [
+            {
+                "name": "email",
+                "description": "the persons or organisation email address"
+            },
+            {
+                "name": "telephone number",
+                "description": "officee telephone line"
+            },
+            {
+                "name": "mobile phone number",
+                "description": "mobile phone number"
+            },
+            {
+                "name": "website",
+                "description": "the website of a person or organisation"
+            },
+            {
+                "name": "P.O.Box",
+                "description": "the post officee number"
+            }
+        ],
+        "districts": [
+            {
+                "name": "kampala"
+            },
+            {
+                "name": "jinja"
+            },
+            {
+                "name": "mukono"
+            }
+        ],
+        "sub_counties": [
+            {
+                "_fk_district_id": "districts@2",
+                "name": "muk islands"
+            },
+            {
+                "_fk_district_id": "districts@2",
+                "name": "muk wetlands"
+            },
+            {
+                "_fk_district_id": "districts@2",
+                "name": "muk skylands"
+            },
+            {
+                "_fk_district_id": "districts@1",
+                "name": "jin islands"
+            },
+            {
+                "_fk_district_id": "districts@1",
+                "name": "jin wetlands"
+            },
+            {
+                "_fk_district_id": "districts@1",
+                "name": "jin skylands"
+            },
+            {
+                "_fk_district_id": "districts@0",
+                "name": "kam islands"
+            },
+            {
+                "_fk_district_id": "districts@0",
+                "name": "kam wetlands"
+            },
+            {
+                "_fk_district_id": "districts@0",
+                "name": "kam skylands"
+            }
+        ],
+        "zones": [
+            {
+                "_fk_sub_county_id": "sub_counties@0",
+                "name": "muk sub 1"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@1",
+                "name": "muk sub 2"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@2",
+                "name": "muk sub 3"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@3",
+                "name": "kam sub 1"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@4",
+                "name": "kam sub 2"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@5",
+                "name": "kam sub 3"
+            },
+            {
+                "_fk_sub_county_id": "sub_counties@8",
+                "name": "xyz"
+            }
+        ],
+        "findus_sources": [
+            {
+                "name": "school meeting"
+            },
+            {
+                "name": "community meeting"
+            },
+            {
+                "name": "k event"
+            },
+            {
+                "name": "radio"
+            },
+            {
+                "name": "tv"
+            },
+            {
+                "name": "facebook"
+            },
+            {
+                "name": "you tube"
+            }
+        ],
+        "repayment_sources": [
+            {
+                "name": "mtn mobile money",
+                "description": "mtn mobile money",
+                "status": "active",
+                "kind": "mobile money",
+                "agent_id": 0
+            },
+            {
+                "name": "airtel mobile money",
+                "description": "airtel mobile money",
+                "status": "active",
+                "kind": "mobile money",
+                "agent_id": 0
+            },
+            {
+                "name": "equity bank",
+                "description": "equity bank",
+                "status": "active",
+                "kind": "bank",
+                "agent_id": 0
+            }
+        ],
+        "agent_activities": [
+            {
+                "name": "parent fees collection",
+                "default_amount": 100000,
+                "reward_percentage": 5,
+                "reward_amount": 5000,
+                "description": "when an agent collects fees",
+                "code": "fca"
+            },
+            {
+                "name": "parent registration",
+                "default_amount": 10000,
+                "reward_percentage": 10,
+                "reward_amount": 1000,
+                "description": "when an agent registers a parent",
+                "code": "pra"
+            },
+            {
+                "name": "school joinning",
+                "default_amount": 100000,
+                "reward_percentage": 10,
+                "reward_amount": 10000,
+                "description": "when an agent brings a schools director and the director signs up",
+                "code": "sja"
+            }
+        ]
+    },
+    "is_registration_public": false,
+    "_f_register": {
+        "app_name": "wla",
+        "name": "wla admin",
+        "email": "wlaadmin@wla.com",
+        "country": "uganda",
+        "phone_number": "0703158861",
+        "password": "qwerty2015"
+    },
+    "is_registration_offline": true,
+    "is_signup_public": true,
+    "is_signup_public_and_login": true,
+    "is_signup_as_active": true,
+    "is_signup_send_activation_code": false,
+    "signup_public_role_ids": {
+        "backofficcee": [
+            2
+        ],
+        "parent": [
+            4
+        ],
+        "agent": [
+            5
+        ],
+        "school": [
+            3
+        ]
+    },
+    "upload_files_with_post_data": false,
+    "upload": {
+        "user": {
+            "avatar": {
+                "_to": "uploads\/avatars\/"
+            }
+        },
+        "file_attachment": {
+            "attached_file": {
+                "_to": "uploads\/files\/"
+            }
+        },
+        "batch_repayment": {
+            "repayment": {
+                "_to": "uploads\/batch_repayments\/"
+            }
+        }
+    },
+    "is_restricted": true,
+    "sudo_delete": true,
+    "drone_security_enabled": true,
+    "use_ui_security_only": true,
+    "use_api_roles_security": true,
+    "send_activation_email": false,
+    "register_as_active": true,
+    "activation_email_subject": "WLA Activation Link",
+    "recovery_email_subject": "WLA password recovery link",
+    "password_email_subject": "WLA user password",
+    "activation_link": "http:\/\/wla.com?---#activate_page",
+    "reset_link": "http:\/\/wla.com?---#reset_page",
+    "sendgrid": {
+        "username": "iamnyola@gmail.com",
+        "sender": "iamnyola@gmail.com",
+        "password": "sendgrid-2015"
+    },
+    "_f_br": []
+}

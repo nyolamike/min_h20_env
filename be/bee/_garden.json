@@ -1,0 +1,278 @@
+{
+    "hive": {
+        "name": [
+            "vcnn",
+            60
+        ],
+        "hive_name": [
+            "vcnn",
+            60
+        ],
+        "email": [
+            "vcnn",
+            60
+        ],
+        "phone_number": [
+            "vcnn",
+            60
+        ],
+        "country": [
+            "vcnn",
+            30
+        ],
+        "code": [
+            "vcnn",
+            30
+        ],
+        "status": [
+            "vcnn",
+            30,
+            "new"
+        ],
+        "password": [
+            "vcnn",
+            255
+        ],
+        "_hidden": [
+            "code",
+            "password"
+        ]
+    },
+    "hive_user": {
+        "user_id": [
+            "inn",
+            30
+        ],
+        "hive_id": [
+            "inn",
+            30
+        ],
+        "hive_name": [
+            "vcnn",
+            60
+        ],
+        "email": [
+            "vcnn",
+            60
+        ],
+        "password": [
+            "vcnn",
+            255
+        ],
+        "_hidden": [
+            "password"
+        ]
+    },
+    "comb": {
+        "hive_id": [
+            "fk"
+        ],
+        "name": [
+            "vcnn",
+            100
+        ],
+        "description": [
+            "vcnn",
+            100
+        ]
+    },
+    "section": {
+        "comb_id": [
+            "fk"
+        ],
+        "name": [
+            "vcnn",
+            100
+        ],
+        "db_kind": [
+            "vcnn",
+            100
+        ],
+        "type": [
+            "vcnn",
+            30
+        ]
+    },
+    "section_fragile": {
+        "section_id": [
+            "fk"
+        ],
+        "section_name": [
+            "vcnn",
+            100
+        ],
+        "used_by_section_id": [
+            "vcnn",
+            30
+        ]
+    },
+    "log": {
+        "route": [
+            "vcn",
+            100
+        ],
+        "type": [
+            "vcn",
+            30
+        ],
+        "CRUD_opertion": [
+            "vcn",
+            30
+        ],
+        "table": [
+            "vcn",
+            30
+        ],
+        "affected_record_guid": [
+            "tnn"
+        ],
+        "description": [
+            "vcnn",
+            100
+        ],
+        "json_data": [
+            "tnn"
+        ],
+        "service_name": [
+            "vcn",
+            30
+        ],
+        "role": [
+            "vcn",
+            100
+        ],
+        "permissions": [
+            "vcn",
+            100
+        ]
+    },
+    "module": {
+        "hive_id": [
+            "fk"
+        ],
+        "time_to_expire": [
+            "inn",
+            "30"
+        ],
+        "code": [
+            "vcnn",
+            30
+        ],
+        "hive_name": [
+            "vcnn",
+            30
+        ],
+        "cost": [
+            "dnn"
+        ],
+        "paid": [
+            "dnn"
+        ],
+        "status": [
+            "vcnn_d",
+            30,
+            "active"
+        ]
+    },
+    "_for": "_garden.json",
+    "_modules": [
+        {
+            "sub_of": "",
+            "name": "dashboard",
+            "code": "dashboard",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "loanproducts",
+            "code": "loan_products",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "clients",
+            "code": "clients",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "contractstatus",
+            "code": "pending_contracts",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "contracts",
+            "code": "contracts",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "repayments",
+            "code": "repayments",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "topuprequests",
+            "code": "topup_requests",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "settlementrequets",
+            "code": "settlement_reqs",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "accounting",
+            "code": "accounting",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "reports",
+            "code": "report",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "salesagents",
+            "code": "sales_agents",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "security",
+            "code": "security",
+            "cost": 300,
+            "description": ""
+        },
+        {
+            "sub_of": "",
+            "name": "configurations",
+            "code": "config",
+            "cost": 300,
+            "description": ""
+        }
+    ],
+    "_actions": {
+        "fiscalyearslistview": {
+            "code": "fiscalyearslistview",
+            "name": "fiscal years list view",
+            "description": "to view the list of fiscal years"
+        }
+    }
+}

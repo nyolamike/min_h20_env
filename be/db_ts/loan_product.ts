@@ -1,0 +1,2 @@
+interface loan_product{
+	name: any,	description: any,	funding_line_id: any,	min_principle_amount: any,	max_principle_amount: any,	min_monthly_interest_rate: any,	max_monthly_interest_rate: any,	min_annual_interest_rate: any,	max_annual_interest_rate: any,	min_grace_period_in_days: any,	max_grace_period_in_days: any,	min_number_of_installments: any,	max_number_of_installments: any,	periodicity: any,	sales_agent_commission_percentage: any,	_comments: any,}

@@ -1,0 +1,2 @@
+interface district{
+	name: any,}

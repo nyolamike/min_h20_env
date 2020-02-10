@@ -1,0 +1,116 @@
+version: '3'
+services:
+  # wla_dev_mysql_srv:
+  #   container_name: wla_dev_mysql_cnt
+  #   image: mariadb
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: secret
+  #     MYSQL_DATABASE: mysql
+  #     MYSQL_USER: mysql
+  #     MYSQL_PASSWORD: mysql
+  #   volumes:
+  #     - ./databases:/var/lib/mysql/data
+  #   ports:
+  #     - 7676:3306
+
+  # wla_dev_phpmyadmin_srv:
+  #   container_name: wla_dev_phpmyadmin_cnt
+  #   image: phpmyadmin/phpmyadmin
+  #   environment:
+  #    - PMA_ARBITRARY=1
+  #    - PMA_HOST=wla_dev_mysql_srv
+  #    - PMA_PORT=3306
+  #   restart: always
+  #   ports:
+  #     - 7575:80
+  #   volumes:
+  #     - ./phpmyadmin/sessions/:/www/sessions
+  #     - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+  #     - ./phpmyadmin/theme/:/www/themes/theme/
+  #   depends_on:
+  #     - wla_dev_mysql_srv
+
+  # wla_dev_be_srv:
+  #   container_name: wla_dev_be_cnt
+  #   build: 
+  #     context: .
+  #     dockerfile: ./be/Dockerfile
+  #   volumes:
+  #     - ./be/:/var/www/html/
+  #   ports:
+  #     - 7474:80
+  #   depends_on:
+  #     - wla_dev_phpmyadmin_srv
+
+  nwae_dev_fe_srv:
+    container_name: nwae_dev_be_cnt
+    build: 
+      context: .
+      dockerfile: ./web/Dockerfile
+    volumes:
+      - ./web/:/var/www/html/
+    ports:
+      - 80:80
+
+  #testing services
+  # wla_dev_mysql_test_srv:
+  #   container_name: wla_dev_mysql_test_cnt
+  #   image: mariadb
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: secret
+  #     MYSQL_DATABASE: mysql
+  #     MYSQL_USER: mysql
+  #     MYSQL_PASSWORD: mysql
+  #   volumes:
+  #     - ./databases:/var/lib/mysql/data
+  #   ports:
+  #     - 7171:3306
+
+  # wla_dev_phpmyadmin_test_srv:
+  #   container_name: wla_dev_phpmyadmin_test_cnt
+  #   image: phpmyadmin/phpmyadmin
+  #   environment:
+  #     - PMA_ARBITRARY=1
+  #     - PMA_HOST=wla_dev_mysql_test_srv
+  #     - PMA_PORT=3306
+  #   restart: always
+  #   ports:
+  #     - 7272:80
+  #   volumes:
+  #     - ./phpmyadmin/sessions/:/www/sessions
+  #     - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+  #     - ./phpmyadmin/theme/:/www/themes/theme/
+  #   depends_on:
+  #     - wla_dev_mysql_test_srv
+
+  # wla_dev_be_test_srv:
+  #   container_name: wla_dev_be_test_cnt
+  #   build: 
+  #     context: .
+  #     dockerfile: ./be/Dockerfile
+  #   volumes:
+  #     - ./be/:/var/www/html/
+  #   ports:
+  #     - 7373:80
+  #   depends_on:
+  #     - wla_dev_phpmyadmin_test_srv
+  #   environment:
+  #     db_server_name: wla_dev_phpmyadmin_test_srv
+  #     db_server_user: root 
+  #     db_server_password: secret
+
+  # wla_dev_fe_srv:
+  #   container_name: wla_dev_fe_cnt
+  #   build: 
+  #     context: .
+  #     dockerfile: ./app/Dockerfile
+  #   volumes:
+  #     - ./app/:/var/www/html/
+  #   ports:
+  #     - 80:80
+  #   depends_on:
+  #     - wla_dev_be_srv
+      
+
+   
+
