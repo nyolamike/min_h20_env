@@ -1,5 +1,5 @@
 layout_login = {
-    init: function(){
+    init: function(page){
         alert("login");
     }
 };

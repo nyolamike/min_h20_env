@@ -12,7 +12,7 @@
 .selected{
     color: #575b9e !important;
     /* font-weight: bold !important; */
-    font-weight: bolder !important; 
+    /* font-weight: bolder !important;  */
 }
 
 .hidden{
@@ -21,4 +21,29 @@
 
 .pointer{
     cursor: pointer;
+}
+
+._ace_page_header{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    background-color: #f6f6f6 !important;
+    height: 35px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.db-cb-hgt{
+    height: 312px;
+}
+
+.scroll-y{
+    overflow-y: auto;
 }

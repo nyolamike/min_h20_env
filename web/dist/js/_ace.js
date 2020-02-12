@@ -25,10 +25,12 @@ _ace = {
             window.location = "#" + this.bag.default_route;
             return;
         }
+        
         this.evaluate_nav_bar();
         //nyd
         //call the init method of the layout
-        window[this.current_layout].init();
+        var pg = this.get_page();
+        window[this.current_layout].init(pg);
     },
     evaluate_nav_bar() {
         var hash = location.hash;
@@ -73,6 +75,10 @@ _ace = {
     },
     get_page: function () {
         var page = "";
+        var current_location = location.hash;
+        if(this.is_hash_undefined()){
+            current_location = "#" + _ace.bag.default_route;
+        }
         for (var i = 0; i < _ace.bag.menu_items.length; i++) {
             var menu_item = _ace.bag.menu_items[i];
             //console.log("here", menu_item.hasOwnProperty("children"), menu_item.children.length > 0);
@@ -80,14 +86,14 @@ _ace = {
                 for (var j = 0; j < menu_item.children.length; j++) {
                     var child_menu_item = menu_item.children[j];
                     //console.log(child_menu_item.link,location.hash);
-                    if (child_menu_item.link == location.hash) {
+                    if (child_menu_item.link == current_location) {
                         page = child_menu_item.page;
                         break;
                     }
                 }
             } else {
                 //console.log(menu_item.link,location.hash);
-                if (menu_item.link == location.hash) {
+                if (menu_item.link == current_location) {
                     page = menu_item.page;
                     break;
                 }
@@ -99,7 +105,7 @@ _ace = {
         //listen to navigation events
         $(window).bind('hashchange', function () {
             var window_layout_segment = _ace.get_hash_layout_segment();
-            console.log("Eval ", _ace.current_hash_layout, window_layout_segment);
+            //console.log("Eval ", _ace.current_hash_layout, window_layout_segment);
             if (_ace.current_hash_layout != window_layout_segment) {
                 //we have a layout change
                 _ace.current_hash_layout = window_layout_segment;
@@ -108,8 +114,10 @@ _ace = {
                 //go to this page
                 //continue from here
                 var page = _ace.get_page();
-                console.log("load page ", page);
+                //console.log("load page ", page, " @", _ace.current_layout);
                 _ace.evaluate_nav_bar();
+                //go to page
+                window[_ace.current_layout].go_to_page(page);
             }
         });
         //setup current current_hash_layout
