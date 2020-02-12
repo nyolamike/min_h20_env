@@ -22,9 +22,9 @@
     <?php 
     $stats = _ace_row_of_resp_cols(
         _ace_info_box("NO. Clients","3,507,000","","users","bg-info",$clients_count_id),
-        _ace_info_box("NO. Meters","3,960,050","","cog","bg-warning",$meters_count_id),
-        _ace_info_box("Avg. Reading","25.57","units","shopping-cart","bg-success",$consumed_id),
-        _ace_info_box("NO. Disconnected Meters","6,706","","cog","bg-danger",$meters_disconnected_id)
+        _ace_info_box("NO. Meters","3,960,050","","tachometer-alt","bg-warning",$meters_count_id),
+        _ace_info_box("Avg. Reading","25.57","units","tint","bg-success",$consumed_id),
+        _ace_info_box("NO. Disconnected Meters","6,706","","trash-alt","bg-danger",$meters_disconnected_id)
     );
 
     $graph_row = _ace_row(
@@ -102,7 +102,7 @@ layout_main_dashboard_page = {
                 pointHoverRadius: 7,
                 pointColor: '#ffc107',
                 pointBackgroundColor: '#ffc107',
-                data: [4912,  15073, 10687, 2666, 2778, ,3278, 8432, 5676, 3767, 6810, 5670, 4820]
+                data: [4912,  15073, 10687, 2666, 2778, 3321,3278, 8432, 5676, 3767, 6810, 5670, 4820]
             },{
                 label: 'Institution Meters',
                 fill: false,
